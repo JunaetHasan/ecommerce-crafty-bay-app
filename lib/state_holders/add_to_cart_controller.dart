@@ -10,7 +10,7 @@ class AddToCartController extends GetxController{
   bool get addToCartInProgress => _addToCartInProgress;
   String get errorMessages => _errorMessages;
 
-  Future<bool> getAddToCardProduct (int productId,String color,String size) async {
+  Future<bool> getAddToCardProduct (int productId,String color,String size,int quanity) async {
     _addToCartInProgress = true;
 
     update();
